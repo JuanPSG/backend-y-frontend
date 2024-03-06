@@ -1,0 +1,56 @@
+
+.container-fluid {
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/8926648/pexels-photo-8926648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") 50% fixed;
+    background-size: cover;
+  }
+
+  .card input {
+    display: block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: border-width 0.2s ease;
+    border-radius: 2px;
+  }
+
+    .card input + i.fa {
+        color: #fff;
+        font-size: 1em;
+        position: absolute;
+        margin-top: -47px;
+        opacity: 0;
+        left: 0;
+        transition: all 0.1s ease-in;
+      }
+
+  .card input:focus {
+    outline: none;
+    color: #444;
+    border-color: #3e4e5b;
+    border-left-width: 35px;
+  }
+
+  .card input:focus + i.fa {
+    opacity: 1;
+    left: 30px;
+    transition: all 0.25s ease-out;
+  }
+
+    .card .title {
+        color: #444;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 10px 0 30px 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+.card button:hover:not(.loading) {
+    box-shadow: 0px 1px 3px #a8b3bd;
+  }
+
+  .card button:focus:not(.loading) {
+    border-bottom-width: 4px;
+  }

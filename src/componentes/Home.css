@@ -1,0 +1,130 @@
+.titulo-horario {
+    font-size: 2.25rem; /* equivalente a 4xl en Tailwind */
+    font-weight: 600; /* equivalente a font-semibold en Tailwind */
+    line-height: 50px; /* leading-[50px] */
+    letter-spacing: 0.05em; /* equivalente a tracking-wide en Tailwind */
+    color: transparent;
+    background-image: linear-gradient(
+      to left,
+      #ec4899,
+      #3b82f6
+    ); /* equivalente a from-pink-400 to-blue-600 */
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-top: 1.5cm;
+    margin-bottom: 0.5cm; /* equivalente a mb-10 en Tailwind */
+  }
+  
+  hr {
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background-color: #ddd; /* Color de la línea, puedes usar un gradiente o un color sólido */
+    margin-top: 0.5cm; /* Espacio arriba */
+    margin-bottom: 1.5cm; /* Espacio abajo */
+  }
+  
+  /* Home.css dentro de la carpeta Componentes */
+  
+  .tabla-horario {
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+    width: auto;
+  }
+  
+  .tabla-horario table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+  }
+  
+  /* Estilos para las celdas de la tabla, tanto cabeceras como celdas normales */
+  .tabla-horario th,
+  .tabla-horario td {
+    padding: 0.9em;
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: middle; /* Centra el contenido verticalmente */
+    border: 1px solid #ddd;
+  }
+  
+  .tabla-horario th {
+    /* Radio de borde para las cabeceras */
+    background: #5f80ab; /* Color de fondo sólido */
+    color: white; /* Texto en color blanco */
+  }
+  
+  .tabla-horario tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para las filas pares */
+  }
+  
+  .tabla-horario tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Home.css dentro de la carpeta Componentes */
+  
+  /* ... (otros estilos) */
+  /* Home.css dentro de la carpeta Componentes */
+  
+  /* ... (otros estilos) */
+  
+  .contenedor-boton {
+    display: flex;
+    justify-content: flex-end; /* Cambiado de center a flex-end para alinear a la derecha */
+    margin-top: 1.5cm;
+    margin-bottom: 1.5cm;
+  }
+  
+  .button-agregar-clase {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-right: 1.5cm;
+  }
+  
+  .button-agregar-clase span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-agregar-clase svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button-agregar-clase:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .button-agregar-clase:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .button-agregar-clase:hover span {
+    transform: translateX(5em);
+  }
+  
+  .button-agregar-clase:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }

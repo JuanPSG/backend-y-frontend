@@ -1,0 +1,16 @@
+/* Importa Lato Light desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  margin: 0;
+  /* Actualiza esta línea para usar Lato Light */
+  font-family: 'Lato';
+  font-weight: 300; /* Especifica el peso para Lato Light */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,107 @@
+.navbar {
+  background-color: #495464;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.bi-x {
+  color: #ffffff; /* Color blanco por defecto para el icono 'X' */
+}
+
+.nav-menu {
+  background-color: #6e7e8c;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #ffffff; /* Color de texto blanco */
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #3e4e5b;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #6e7e8c;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.school-name {
+  color: white;
+  font-weight: bold; /* Solo "Secundaria General #24" en negritas */
+  margin-right: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.menu-bars:hover .bi-x {
+  color: #ffffff; /* Mantener el color del icono 'X' en blanco */
+}
+
+.menu-bars:hover {
+  background-color: #3e4e5b; /* Color de fondo para el botón que contiene el icono 'X' al pasar el cursor */
+  border-radius: 4px; /* Radio de borde para igualar a los demás elementos de la lista */
+}
+
+/* Remover las negritas de otros textos si es necesario */
+.nav-text a {
+  font-weight: normal; /* Esto asegura que el texto de los en
+laces no esté en negritas */
+}

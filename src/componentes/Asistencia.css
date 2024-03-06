@@ -1,0 +1,72 @@
+/* Asistencia.css */
+.asistencia-container {
+  max-width: 1200px; /* o el ancho máximo que prefieras */
+  margin-right: auto; /* Centrar el contenedor horizontalmente */
+  margin-left: auto; /* Centrar el contenedor horizontalmente */
+  padding-right: 15px; /* Padding a la derecha para evitar que el contenido toque los bordes */
+  padding-left: 15px; /* Padding a la izquierda para evitar que el contenido toque los bordes */
+}
+/* Añadir margen debajo del botón */
+.btn-add-asistencia {
+  margin-bottom: 1rem; /* Ajusta este valor según el espacio que desees */
+}
+
+.accordion-item {
+  background-color: #296386; /* Fondo para cada ítem del acordeón */
+  border: 1px solid #8896a8; /* Color del borde */
+  margin-bottom: 0rem; /* Espacio entre ítems */
+  border-radius: 0.25rem; /* Bordes redondeados */
+}
+
+.accordion-header,
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem; /* Ajuste de padding */
+  font-size: 1rem; /* Tamaño de fuente */
+  color: white; /* Color del texto */
+  text-align: left; /* Alineación del texto a la izquierda */
+  background-color: #296386; /* Fondo del botón */
+  border: none; /* Sin borde */
+  border-radius: 0; /* Sin bordes redondeados */
+  overflow-anchor: none;
+  transition: background-color 0.15s ease-in-out; /* Transición suave */
+}
+
+.accordion-button:hover {
+  background-color: #1f4f6a; /* Oscurecer el fondo al pasar el mouse */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #6a7a8d; /* Aclarar el fondo cuando esté expandido */
+  color: white; /* Mantener el color del texto en blanco */
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #296386;
+  outline: 0;
+  box-shadow: none; /* Sin sombra de enfoque */
+}
+
+.accordion-button:after {
+  display: inline-block;
+  content: "";
+  background-image: url("data:image/svg+xml,..."); /* Debes reemplazar esto con tu icono deseado */
+  background-size: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto; /* Mover el icono al final del botón */
+}
+
+.accordion-collapse {
+  background-color: #f6f7f9; /* Fondo para el contenido colapsable */
+}
+
+.accordion-body {
+  padding: 1rem; /* Padding para el cuerpo */
+}
